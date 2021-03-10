@@ -1,3 +1,13 @@
+.title,
+.text {
+  color: rgb(231, 231, 231);
+  text-decoration: none;
+}
+.title:hover,
+.text:hover {
+  color: rgb(214, 13, 13);
+}
+
 .background {
   padding: 0;
   margin: 0;
@@ -8,12 +18,9 @@
 .greet {
   color: rgb(231, 231, 231);
 }
-.greet:hover {
-  color: rgb(214, 13, 13);
-}
-
 .links {
   list-style: none;
+  text-decoration: none;
 }
 .links a {
   color: rgb(231, 231, 231);
@@ -21,7 +28,8 @@
   margin: 50px 50px 50px 50px;
   font-size: large;
 }
-.links a:hover {
+.links a:hover,
+.greet:hover {
   color: rgb(214, 13, 13);
   text-decoration: none;
 }
@@ -31,4 +39,23 @@ header {
 .project-image:hover {
   border: 10px rgb(214, 13, 13);
   cursor: pointer;
+}
+
+/* aid responsive design ...*/
+@media only screen and (max-width: 600px) {
+  .links a {
+    line-height: 80px;
+    text-decoration: none;
+    margin: 50px 80px 50px 50px;
+    font-size: large;
+  }
+  header {
+    height: 80px;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(17, 19, 24);
+  }
+  .main-content {
+    margin-top: 50px;
+  }
 }

@@ -1,1 +1,3 @@
 # VanillaJs
+
+![](progressPictures/firstHome.PNG)

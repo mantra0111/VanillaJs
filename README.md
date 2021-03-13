@@ -36,4 +36,4 @@ i will keep improving the weather app tomorrow it will look like this for now
 # March 13(saturday) 2021
 Today i improved the second project's interface with better bootstrap positioning, but i still don't understand about weather measurement so i want to read a little bit about celcius and farenheit units to understand better what i'm doing
 
-![](progressPictures/weatherinterface2.0.PNG)
+![](progressPictures/weatherInterface2.0.PNG)

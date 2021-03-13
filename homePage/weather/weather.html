@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/styleWeather.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="../scripts/weather.js" defer></script>
 </head>
 
 <body class="background">
@@ -24,13 +25,13 @@
         <div class="container weather-info">
             <div class="row">
                 <div class="col-4 offset-4 text-center">
-                    <h1>weather in </h1>
+                    <h id="city-name">weather in </h1>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-2 mt-3 offset-5 ">
                     <img src="../images/samplePepe.jpg" class="img-fluid img-thumbnail">
-                    <h2>0111 °C </h2>
+                    <h2 id="temperature">0111 °C </h2>
                 </div>
             </div>
         </div>

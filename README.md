@@ -27,3 +27,8 @@ this one will be a weather app, tomorrow i will try to make an
 api call to actually fetch and display some data 
 
 ![](progressPictures/weatherInterface.PNG)
+# March 12(friday) 2021
+today i tried to make an api call for my weather api , it runned succesfully on local but i got an error when i pushed the changes.
+i will keep improving the weather app tomorrow it will look like this for now 
+
+![](progressPictures/fetchApi.PNG)

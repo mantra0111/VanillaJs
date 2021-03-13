@@ -1,19 +1,32 @@
 const cityDisplay = document.getElementById("city-name")
 const temperature = document.getElementById('temperature')
-//create new request object
-const request = new XMLHttpRequest();
+const fetchButton = document.getElementById('fetch-button')
+const cityInput = document.getElementById('city-input')
 // request credentials
 const KEY = '7b4035b92033c24eae8fc6fb561f2d75'
-let city = 'London'
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + KEY
-fetch(url)
-    .then(res => {
-        return res.json()
-    })
-    .then((data) => {
-        temperature.innerHTML = data.main.temp
-        cityDisplay.innerHTML = 'weather in ' + data.name
-    }).catch((err) => {
-        alert('something went wrong, check the console')
-        console.log(err)
-    })
+let url = ''
+cityInput.addEventListener('change', (event) => {
+    let eventText = event.target.value
+    let city = eventText[0].toUpperCase() + eventText.substring(1)
+    url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=' + KEY
+    console.log(url)
+})
+
+
+fetchButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    //we fetch for data with the credentials 
+
+    fetch(url)
+        .then(res => {
+            return res.json()
+        })
+        .then((data) => {
+            temperature.innerHTML = data.main.temp + "°"
+            cityDisplay.innerHTML = 'weather in ' + data.name
+        }).catch((err) => {
+            alert("we couldn't find your city")
+            console.log(err)
+        })
+})
+

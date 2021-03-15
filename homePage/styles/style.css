@@ -19,6 +19,7 @@
   color: rgb(231, 231, 231);
 }
 .links {
+  display: inline;
   list-style: none;
   text-decoration: none;
 }
@@ -41,12 +42,16 @@ header {
   cursor: pointer;
 }
 
+.image-thumbnail {
+  height: 300px;
+}
+
 /* aid responsive design ...*/
 @media only screen and (max-width: 600px) {
   .links a {
     line-height: 80px;
     text-decoration: none;
-    margin: 50px 80px 50px 50px;
+    margin: 50px 50px 50px 20px;
     font-size: large;
   }
   header {
@@ -56,6 +61,9 @@ header {
     background-color: rgb(17, 19, 24);
   }
   .main-content {
+    margin-top: 50px;
+  }
+  .projects div {
     margin-top: 50px;
   }
 }

@@ -93,3 +93,12 @@ body {
   color: rgb(214, 13, 13);
   text-decoration: none;
 }
+
+@media only screen and (max-width : 600px ){
+  .links a {
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    margin: 50px 50px 50px 0px;
+    font-size: large;
+  }
+}

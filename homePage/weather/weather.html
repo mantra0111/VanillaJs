@@ -10,6 +10,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="../scripts/weather.js" defer></script>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="background">
@@ -31,10 +32,13 @@
                 <div class="col-12  col-md-6 offset-md-3 text-center">
                     <h2 id="city-name">weather in ...</h2>
                 </div>
+                <div class="col-12  col-md-6 offset-md-3 mt-3 text-center">
+                    <h2 id="weather-status">...</h2>
+                </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-2 col-8 offset-2 mt-3 offset-md-5 ">
-                    <img src="../images/samplePepe.jpg" class="img-fluid img-thumbnail">
+                    <img src="../images/samplePepe.jpg" id="weather-icon" class="img-fluid img-thumbnail">
                 </div>
             </div>
             <div class="row text-center">
@@ -50,7 +54,7 @@
                     <form>
                         <div class="form-group row align-items-center">
                             <div class="col-md-6 offset-md-3 col-8 offset-2">
-                                <label class="offset-4 offset-md-0">enter your city's name</label>
+                                <label class="offset-2 offset-md-0">enter your city's name</label>
                                 <input type="text" class="form-control" id="city-input" placeholder="medellin">
                                 <button class="btn btn-danger mt-4 col-12 offset-md-0" id="fetch-button">check
                                     the

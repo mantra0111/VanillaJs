@@ -30,3 +30,9 @@ header {
 .weather-input {
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .links a {
+    margin: 0px 0px;
+  }
+}

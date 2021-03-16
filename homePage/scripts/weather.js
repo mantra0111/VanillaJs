@@ -23,14 +23,13 @@ fetchButton.addEventListener('click', (event) => {
         .then(res => {
             return res.json()
         })
-        .then((data) => {
+        .then(data => {
             temperature.innerHTML = data.main.temp + "° C"
             cityDisplay.innerHTML = 'weather in ' + data.name
             weatherStatus.innerHTML = data.weather[0].main
             weather = data.weather[0].main
-        }).then((data) => {
-            alert('' + weather)
             weatherIcon.src = '../images/weatherImages/clouds.png'
+        }).then(data => {
         })
         .catch((err) => {
             alert("we couldn't find your city")

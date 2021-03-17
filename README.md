@@ -40,3 +40,10 @@ Today i improved the second project's interface with better bootstrap positionin
 
 # March 15(monday) 2021
 Today i improved the general responsive view of both the homepage and the weather app, i still need to fix the calculator 
+
+# Match 17(wednesday) 2021
+Today i started my third project, for this project i am calling covid-19 data from different countries using fetch and displaying them when the user selects a country
+i still have to improve the styling (as always)
+
+![](progressPictures/covidStats.PNG)
+

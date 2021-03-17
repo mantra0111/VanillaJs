@@ -7,11 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/covidStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="../scripts/covid.js" defer></script>
 </head>
 
 <body class="background">
     <header>
-        <nav>
+        <nav class="navbar-dark">
             <ul>
                 <li class="links"><a href="./index.html">Home</a></li>
             </ul>
@@ -19,13 +22,20 @@
     </header>
     <main>
         <label>select a country: </label>
-        <select>
-            <optgroup label="country">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+        <select id="countries">
+            <optgroup id="opt-group">
+
             </optgroup>
         </select>
+        <button id="search-data">search data</button>
+        <br>
+        <article id="display">
+            <h1 id="country-name"></h1>
+            <h3 id="population"></h3>
+            <h3 id="cases"></h3>
+            <h3 id="recovered"></h3>
+            <h3 id="deaths"></h3>
+        </article>
     </main>
     <footer>
 

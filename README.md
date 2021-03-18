@@ -49,4 +49,5 @@ i still have to improve the styling (as always)
 
 # March 18(thursday) 2021
 today i uploaded my third project , it looks like this 
+
 ![](homePage/images/projectThumbnail/covidStats.PNG)

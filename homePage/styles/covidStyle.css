@@ -1,28 +1,14 @@
-.title,
-.text {
-  color: rgb(231, 231, 231);
-  text-decoration: none;
-}
-.title:hover,
-.text:hover {
-  color: rgb(214, 13, 13);
-}
-
 .background {
-    color: aliceblue;
+  color: aliceblue;
   padding: 0;
   margin: 0;
   background-color: rgb(39, 45, 59);
   height: 100%;
   width: 100%;
 }
-.greet {
-  color: rgb(231, 231, 231);
-}
 .links {
   display: inline;
   list-style: none;
-  text-decoration: none;
 }
 .links a {
   color: rgb(231, 231, 231);
@@ -30,21 +16,12 @@
   margin: 50px 50px 50px 50px;
   font-size: large;
 }
-.links a:hover,
-.greet:hover {
+.links a:hover {
   color: rgb(214, 13, 13);
   text-decoration: none;
 }
 header {
   margin: 30px 50px 50px 20px;
-}
-.project-image:hover {
-  border: 10px rgb(214, 13, 13);
-  cursor: pointer;
-}
-
-.image-thumbnail {
-  height: 300px;
 }
 
 /* aid responsive design ...*/
@@ -66,5 +43,7 @@ header {
   }
   .projects div {
     margin-top: 50px;
+  }
+  .row-data {
   }
 }

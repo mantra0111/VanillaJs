@@ -1,0 +1,13 @@
+body{
+    display: flex;
+}
+
+main{
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20vw;
+}

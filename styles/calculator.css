@@ -1,0 +1,32 @@
+main{
+    justify-content: center;
+}
+
+#calc-container{
+    height: 450px;
+    width: 280px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(24, 24, 24) 0%, 
+    rgb(12, 12, 12) 80%, 
+    rgba(0,0,0,1) 100%);
+    border-radius: 20px;
+}
+
+#operation{
+    color: rgb(145, 145, 145);
+    margin: 40px 20px 10px 10px;
+    text-align: end;
+    font-size: 20px;
+}
+#results{
+    color: var(--text-color-white);
+    margin: 10px 20px 10px 10px;
+    text-align: end;
+    font-size: 40px;
+}
+#buttons-container{
+    background-color: rgba(182, 61, 61,0.1);
+    height: 71.1%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px ;
+}

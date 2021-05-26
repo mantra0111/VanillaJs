@@ -1,9 +1,4 @@
-:root{
-    --main-color: #3feee6;
-    --primary-color : #fc4445;
-    --text-color-white: #cafafe;
-    --text-color-black: #000;
-}
+
 header{
     display: flex;
     height: 100vh;
@@ -43,4 +38,5 @@ header{
 
 #navigation-links li a:hover{
     color: var(--text-color-white) ;
+    border-bottom: 1px solid var(--text-color-white);
 }

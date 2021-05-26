@@ -1,0 +1,10 @@
+:root{
+    --main-font : 'Source Code Pro', monospace;
+    --main-color: #3feee6;
+    --primary-color : #fc4445;
+    --text-color-white: #cafafe;
+    --text-color-black: #000;
+}
+*{
+    font-family: var(--main-font);
+}

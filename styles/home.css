@@ -1,13 +1,4 @@
-*{
-    font-family: 'Source Code Pro', monospace;
-}
 
-:root{
-    --main-color: #3feee6;
-    --primary-color : #fc4445;
-    --text-color-white: #cafafe;
-    --text-color-black: #000;
-}
 
 body{
     display: flex;

@@ -1,0 +1,27 @@
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+
+:root{
+    --main-color: #3feee6;
+    --primary-color : #fc4445;
+    --text-color-white: #cafafe;
+    --text-color-black: #000;
+}
+
+body{
+    display: flex;
+}
+
+main{
+    width: 80vw;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentation{
+    margin: 75px 0px 0px 0px;
+    text-align: center;
+}

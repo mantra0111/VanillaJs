@@ -3,7 +3,7 @@ main{
 }
 
 #calc-container{
-    height: 450px;
+    height: 500px;
     width: 280px;
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgb(24, 24, 24) 0%, 
@@ -14,19 +14,52 @@ main{
 
 #operation{
     color: rgb(145, 145, 145);
-    margin: 40px 20px 10px 10px;
+    margin: 30px 20px 10px 0px;
     text-align: end;
     font-size: 20px;
 }
 #results{
     color: var(--text-color-white);
-    margin: 10px 20px 10px 10px;
+    margin: 0px 20px 5px 20px;
     text-align: end;
-    font-size: 40px;
+    font-size: 50px;
+}
+#separator{
+    margin: 0 auto;
+    height: 3px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
 }
 #buttons-container{
-    background-color: rgba(182, 61, 61,0.1);
     height: 71.1%;
     width: 100%;
     border-radius: 0px 0px 20px 20px ;
+}
+
+.button-column{
+    background-color: rgba(238, 255, 0,0);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 20%;
+}
+
+.button-column input{
+    background-color: rgba(0,0,0,0);
+    color: var(--text-color-white);
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0px ;
+}
+.button-column input:hover{
+    background-color: rgb(226, 192, 0);;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#multiplication{
+    transform: rotate(45deg);
 }

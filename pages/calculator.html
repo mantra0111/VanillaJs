@@ -32,17 +32,38 @@
         <div id="calc-container">
             <div id="operation">2+2</div>
             <div id="results">5</div>
+            <div id="separator"></div>
             <div id="buttons-container">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="0">
+                <div class="button-column">
+                    <input class="symbol-button" type="button" value="AC">
+                    <input class="symbol-button" type="button" value="+-">
+                    <input class="symbol-button" type="button" value="%">
+                    <input class="symbol-button" type="button" value="/">
+                </div>
+                <div class="button-column">
+                    <input class="number-button" type="button" value="7">
+                    <input class="number-button" type="button" value="8">
+                    <input class="number-button" type="button" value="9">
+                    <input class="symbol-button" id="multiplication" type="button" value="+">
+                </div>
+                <div class="button-column">
+                    <input class="number-button" type="button" value="4">
+                    <input class="number-button" type="button" value="5">
+                    <input class="number-button" type="button" value="6">
+                    <input class="symbol-button" type="button" value="-">
+                </div>
+                <div class="button-column">
+                    <input class="number-button" type="button" value="1">
+                    <input class="number-button" type="button" value="2">
+                    <input class="number-button" type="button" value="3">
+                    <input class="symbol-button" type="button" value="+">
+                </div>
+                <div class="button-column">
+                    <input class="number-button" type="button" value="0">
+                    <input class="symbol-button" type="button" value="<=">
+                    <input class="symbol-button" type="button" value=".">
+                    <input class="symbol-button" type="button" value="=">
+                </div>
             </div>
         </div>
     </main>

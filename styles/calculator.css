@@ -3,8 +3,8 @@ main{
 }
 
 #calc-container{
-    height: 500px;
-    width: 280px;
+    height: 80%;
+    width: 33%;
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgb(24, 24, 24) 0%, 
     rgb(12, 12, 12) 80%, 
@@ -32,7 +32,7 @@ main{
     border-radius: 30px;
 }
 #buttons-container{
-    height: 71.1%;
+    height: 75.4%;
     width: 100%;
     border-radius: 0px 0px 20px 20px ;
 }

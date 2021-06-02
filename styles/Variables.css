@@ -5,6 +5,3 @@
     --text-color-white: #cafafe;
     --text-color-black: #000;
 }
-*{
-    font-family: var(--main-font);
-}

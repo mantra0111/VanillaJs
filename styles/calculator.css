@@ -64,3 +64,16 @@ main{
 #multiplication{
     transform: rotate(45deg);
 }
+
+@media only screen and (max-width: 600px){
+    #calc-container{
+        margin: 13vh 0px 7vh 0px;
+        height: 80vh;
+        width: 80vw;
+        background: linear-gradient(0deg, rgb(24, 24, 24) 0%, 
+        rgb(12, 12, 12) 80%, 
+        rgba(0,0,0,1) 100%);
+        border-radius: 20px;
+    }
+    
+}

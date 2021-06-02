@@ -21,3 +21,21 @@ main{
 *{
     font-family: var(--main-font);
 }
+
+@media only screen and (max-width:600px){
+    header{
+        display: flex;
+        
+        position: fixed;
+        height: 10vh;
+        width: 100vw;
+        background-color: var(--primary-color);
+        border-right: 1px solid var(--text-color-black);
+    }
+    main{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}

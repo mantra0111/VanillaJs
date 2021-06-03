@@ -1,10 +1,11 @@
-#x-button{
+#hamburger-button{
     visibility: hidden;
     font-size: 40px;
     margin: 20px 0px 0px 200px;
     font-weight: bold;
     display: flex;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
+    letter-spacing: -9px;
 }
 #x-button:hover{
     color: var(--text-color-white);
@@ -42,12 +43,11 @@
     #navigation-links li a{
         display: none;
     }
-    #x-button{
+    #hamburger-button{
+        background-color: var(--primary);
         visibility: unset;
-        margin: 0.05em 0px 0px 90vw;
-        font-weight: bold;
-        display: flex;
-        transform: rotate(45deg);
+        margin: 0em 0px 0px 85vw;
+        border: 0px ;
     }
 }
 

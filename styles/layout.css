@@ -1,5 +1,10 @@
 body{
     display: flex;
+    background-color: var(--main-color);
+}
+nav{
+    height: 100%;
+    width: 70%;
 }
 header{
     display: flex;
@@ -11,6 +16,7 @@ header{
 }
 main{
     width: 80vw;
+    bottom: 0;
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -22,12 +28,11 @@ main{
     font-family: var(--main-font);
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1024px){
     header{
         display: flex;
-        
         position: fixed;
-        height: 10vh;
+        height: 65px;
         width: 100vw;
         background-color: var(--primary-color);
         border-right: 1px solid var(--text-color-black);

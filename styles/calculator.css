@@ -73,7 +73,7 @@ main{
     transform: rotate(45deg);
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1024px){
     #calc-container{
         margin: 13vh 0px 7vh 0px;
         height: 80vh;

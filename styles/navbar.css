@@ -1,4 +1,5 @@
 #x-button{
+    visibility: hidden;
     font-size: 40px;
     margin: 20px 0px 0px 200px;
     font-weight: bold;
@@ -32,3 +33,21 @@
     color: var(--text-color-white) ;
     text-shadow: -0.1rem -0.1rem var(--text-color-black);
 }
+
+@media only screen and (max-width : 1024px){
+
+    #navigation-links li {
+       display: none;
+    }
+    #navigation-links li a{
+        display: none;
+    }
+    #x-button{
+        visibility: unset;
+        margin: 0.05em 0px 0px 90vw;
+        font-weight: bold;
+        display: flex;
+        transform: rotate(45deg);
+    }
+}
+

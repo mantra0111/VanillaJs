@@ -36,16 +36,12 @@
 }
 
 @media only screen and (max-width : 1024px){
-
-    #navigation-links li {
-       display: none;
-    }
-    #navigation-links li a{
+    #navigation-links {
         display: none;
     }
     #hamburger-button{
+        visibility: visible;
         background-color: var(--primary);
-        visibility: unset;
         margin: 0em 0px 0px 85vw;
         border: 0px ;
     }

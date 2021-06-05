@@ -39,6 +39,19 @@ hamburgerButton.addEventListener("click", () => {
 
 function resizeListerner() {
     console.log(window.innerWidth)
+    if (window.innerWidth > 1024) {
+        header.style.height = "100vw"
+        navbarLinks.style.display = "list-item"
+    } else if (window.innerWidth < 1024) {
+        hamburgerButton.style.color = "#000"
+        hamburgerButton.innerHTML = "|||"
+        hamburgerButton.style.margin = "0em 0px 0px 85vw"
+        hamburgerButton.style.transform = "rotate(90deg)"
+        hamburgerButton.style.fontSize = "40px";
+        open = false
+        header.style.height = "65px"
+        navbarLinks.style.display = "none"
+    }
 }
 
 window.onresize = resizeListerner;

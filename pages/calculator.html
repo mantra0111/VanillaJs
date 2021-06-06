@@ -3,6 +3,8 @@
 <html>
 
 <head>
+    <script defer src="../scripts/navbar.js"></script>
+    <script defer src="../scripts/calculator.js"></script>
     <meta charset="utf-8">
     <title>Mateo Sierra Betancur</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +12,7 @@
     <link rel="stylesheet" href="../styles/layout.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/calculator.css">
-    <script defer src="../scripts/navbar.js"></script>
+
 </head>
 
 <body style="margin: 0px;">
@@ -31,39 +33,39 @@
     </header>
     <main>
         <div id="calc-container">
-            <div id="operation">2+2</div>
-            <div id="results">5</div>
+            <div id="operation"></div>
+            <div id="result">0</div>
             <div id="separator"></div>
             <div id="buttons-container">
                 <div class="button-column">
-                    <input class="symbol-button" type="button" value="AC">
-                    <input class="symbol-button" type="button" value="+-">
-                    <input class="symbol-button" type="button" value="%">
-                    <input class="symbol-button" type="button" value="/">
+                    <input class="writing-button" type="button" value="AC">
+                    <input class="writing-button" type="button" value="+-">
+                    <input class="writing-button" type="button" value="%">
+                    <input class="writing-button" type="button" value="/">
                 </div>
                 <div class="button-column">
-                    <input class="number-button" type="button" value="7">
-                    <input class="number-button" type="button" value="8">
-                    <input class="number-button" type="button" value="9">
-                    <input class="symbol-button" id="multiplication" type="button" value="+">
+                    <input class="writing-button" type="button" value="7">
+                    <input class="writing-button" type="button" value="8">
+                    <input class="writing-button" type="button" value="9">
+                    <input class="writing-button" id="multiplication" type="button" value="+">
                 </div>
                 <div class="button-column">
-                    <input class="number-button" type="button" value="4">
-                    <input class="number-button" type="button" value="5">
-                    <input class="number-button" type="button" value="6">
-                    <input class="symbol-button" type="button" value="-">
+                    <input class="writing-button" type="button" value="4">
+                    <input class="writing-button" type="button" value="5">
+                    <input class="writing-button" type="button" value="6">
+                    <input class="writing-button" type="button" value="-">
                 </div>
                 <div class="button-column">
-                    <input class="number-button" type="button" value="1">
-                    <input class="number-button" type="button" value="2">
-                    <input class="number-button" type="button" value="3">
-                    <input class="symbol-button" type="button" value="+">
+                    <input class="writing-button" type="button" value="1">
+                    <input class="writing-button" type="button" value="2">
+                    <input class="writing-button" type="button" value="3">
+                    <input class="writing-button" type="button" value="+">
                 </div>
                 <div class="button-column">
-                    <input class="number-button" type="button" value="0">
-                    <input class="symbol-button" type="button" value="<=">
-                    <input class="symbol-button" type="button" value=".">
-                    <input class="symbol-button" type="button" value="=">
+                    <input class="writing-button" type="button" value="0">
+                    <input id="erase-button" type="button" value="<=">
+                    <input class="writing-button" type="button" value=".">
+                    <input id="evaluate-button" type="button" value="=">
                 </div>
             </div>
         </div>

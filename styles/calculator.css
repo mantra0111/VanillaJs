@@ -1,3 +1,11 @@
+:root{
+    --main-font : 'Source Code Pro', monospace;
+    --primary-color: #fafafa;
+    --main-color : #ec1e1e;
+    --text-color-white: #e1edee;
+    --text-color-black: #000;
+}
+
 main{
     justify-content: center;
 }

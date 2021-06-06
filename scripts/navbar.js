@@ -4,7 +4,6 @@ const header = document.querySelector("header")
 let open = false;
 
 const closedStyles = {
-    color: "#fff",
     margin: "-0.25em 0px 0px 86vw",
     transform: "rotate(45deg)",
     fontSize: "60px"
@@ -13,7 +12,6 @@ const closedStyles = {
 hamburgerButton.addEventListener("click", () => {
     if (!open) {
         // transform the hamburger into an x 
-        hamburgerButton.style.color = closedStyles.color
         hamburgerButton.style.margin = closedStyles.margin
         hamburgerButton.style.transform = closedStyles.transform
         hamburgerButton.style.fontSize = closedStyles.fontSize
@@ -24,7 +22,6 @@ hamburgerButton.addEventListener("click", () => {
         header.style.height = "450px"
 
     } else {
-        hamburgerButton.style.color = "#000"
         hamburgerButton.innerHTML = "|||"
         hamburgerButton.style.margin = "0em 0px 0px 85vw"
         hamburgerButton.style.transform = "rotate(90deg)"

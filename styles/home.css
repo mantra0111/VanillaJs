@@ -1,26 +1,22 @@
-:root{
-    --main-font : 'Source Code Pro', monospace;
-    --main-color: #3feee6;
-    --primary-color : #fc4445;
-    --text-color-white: #cafafe;
-    --text-color-black: #000;
-}
-
 #presentation{
     margin: 60px 0px 0px 0px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0px 30px 10px 30px;
+    border-radius: 1rem;
 }
 
 #presentation h1{
     font-size: 4rem;
-    text-shadow: -0.2rem -0.2rem var(--primary-color);
+    text-shadow: -0.1rem -0.1rem var(--primary-color);
     margin: 75px 0px 0px 0px;
     text-align: center;
+
 }
 
 #presentation h1:hover{
-    color: var(--text-color-white);
-    text-shadow: -0.2rem -0.2rem var(--text-color-black);
+    color: var(--primary-color);
+    text-shadow: -0.1rem -0.1rem var(--text-color-black);
 }
 
 #projects{
@@ -30,11 +26,19 @@
 }
 
 #projects a{
-    margin: 5% 0% 0% 5%;
+    margin: 5% 0% 0% 10%;
 }
 
 .project-thumbnail img {
-    border: 4px solid var(--primary-color);
-    height: 200px;
-    border-radius: 15px;
+    border-radius: 1rem solid var(--main-color);
+    height: 15em;
+    border-radius: 5px;
 }
+
+.project-thumbnail img:hover {
+    position: relative;
+    right: 0.5em;
+    bottom: 0.5em;
+    height: 16em;
+}
+

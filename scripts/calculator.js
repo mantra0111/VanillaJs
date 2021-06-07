@@ -1,10 +1,23 @@
 // this are the text fields for the results and operations
 let operation = document.querySelector("#operation")
 let result = document.querySelector("#result")
-
+let hiddenOperation = "";
+let multiplicationButton = document.querySelector("#multiplication")
+let eraseAll = document.querySelector("#erase-all")
 
 let eraseButton = document.querySelector("#erase-button")
 let evaluateButton = document.querySelector("#evaluate-button")
+
+multiplicationButton.addEventListener("click", (event) => {
+    operation.innerHTML += multiplicationButton.value;
+    hiddenOperation += "*"
+})
+
+eraseAll.addEventListener("click", () => {
+    operation.innerHTML = "";
+    hiddenOperation = "";
+    result.innerHTML = "0";
+})
 
 eraseButton.addEventListener("click", (event) => {
     let updated = operation.innerHTML.split("");
@@ -14,10 +27,13 @@ eraseButton.addEventListener("click", (event) => {
 })
 
 evaluateButton.addEventListener("click", () => {
-    let evaluatedExpression = eval(operation.innerHTML)
+    let evaluatedExpression = eval(hiddenOperation)
     result.innerHTML = "" + evaluatedExpression
     operation.innerHTML = "";
+    hiddenOperation = ""
 })
+
+
 
 // this buttons write symbols on the operation field
 let wirtingButtons = document.querySelectorAll(".button-column .writing-button")
@@ -25,5 +41,6 @@ let wirtingButtons = document.querySelectorAll(".button-column .writing-button")
 for (let i in wirtingButtons) {
     wirtingButtons[i].addEventListener("click", (event) => {
         operation.innerHTML = operation.innerHTML + event.target.value
+        hiddenOperation += event.target.value
     })
 }

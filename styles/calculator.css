@@ -26,6 +26,7 @@ main{
     margin: 30px 20px 10px 0px;
     text-align: end;
     font-size: 20px;
+    min-height: 1.5em;
 }
 #result{
     color: var(--text-color-white);
@@ -39,6 +40,9 @@ main{
     width: 95%;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
+}
+#multiplication{
+    transform: rotate(45deg);
 }
 #buttons-container{
     height: 75.4%;
@@ -67,10 +71,6 @@ main{
     background-color: rgb(226, 192, 0);;
     color: rgb(0, 0, 0);
     cursor: pointer;
-}
-
-#multiplication{
-    transform: rotate(45deg);
 }
 
 @media only screen and (max-width: 1024px){

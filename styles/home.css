@@ -37,17 +37,18 @@
 .project-container{
     display: flex;
     margin: 5% 0% 0% 3%;
-    border: 1px solid black;
+    border: 0.25rem solid black;
     width: 55vw;
     border-radius: 1rem;
     background-color: var(--primary-color);
 }
 
 .project-container-media{
-    margin: 0px 0px 0px 5%;
+    margin: 5%;
 }
 .project-container-media img{
     border-radius: 0.5rem;
+    border: 0.25rem solid black;
 }
 
 .project-container-info {

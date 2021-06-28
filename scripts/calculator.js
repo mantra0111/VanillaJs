@@ -1,7 +1,10 @@
 // this are the text fields for the results and operations
+
 let operation = document.querySelector("#operation")
 let result = document.querySelector("#result")
+
 let hiddenOperation = "";
+
 let multiplicationButton = document.querySelector("#multiplication")
 let eraseAll = document.querySelector("#erase-all")
 
@@ -9,7 +12,7 @@ let eraseButton = document.querySelector("#erase-button")
 let evaluateButton = document.querySelector("#evaluate-button")
 
 multiplicationButton.addEventListener("click", (event) => {
-    operation.innerHTML += multiplicationButton.value;
+    operation.innerHTML += "x";
     hiddenOperation += "*"
 })
 
@@ -27,10 +30,17 @@ eraseButton.addEventListener("click", (event) => {
 })
 
 evaluateButton.addEventListener("click", () => {
-    let evaluatedExpression = eval(hiddenOperation)
-    result.innerHTML = "" + evaluatedExpression
-    operation.innerHTML = "";
-    hiddenOperation = ""
+    try {
+        let evaluatedExpression = eval(hiddenOperation)
+        result.innerHTML = "" + evaluatedExpression
+        operation.innerHTML = ""; // a ** b = a^b
+        hiddenOperation = ""
+    } catch (error) {
+        console.log(error)
+        alert(`la operacion ${operation.innerHTML} no es valida`)
+        operation.innerHTML = "";
+        hiddenOperation = ""
+    }
 })
 
 

@@ -27,12 +27,14 @@ main{
     text-align: end;
     font-size: 20px;
     min-height: 1.5em;
+    overflow: auto;
 }
 #result{
     color: var(--text-color-white);
     margin: 0px 20px 5px 20px;
     text-align: end;
     font-size: 50px;
+    overflow: auto;
 }
 #separator{
     margin: 0 auto;
@@ -64,11 +66,11 @@ main{
     font-size: 30px;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
     border: 0px ;
 }
 .button-column input:hover{
-    background-color: rgb(226, 192, 0);;
+    background-color: rgb(245, 245, 245);;
+    border-radius: 1rem;
     color: rgb(0, 0, 0);
     cursor: pointer;
 }

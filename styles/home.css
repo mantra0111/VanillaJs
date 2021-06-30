@@ -40,13 +40,13 @@
     display: flex;
     margin: 2rem 0rem 2rem 0rem ;
     border: 0.25rem solid black;
-    width: 55vw;
+    width: 800px;
     border-radius: 1rem;
     background-color: var(--primary-color);
 }
 
 .project-container-media{
-    margin: 5%;
+    margin: 1rem;
 }
 .project-container-media img{
     height: 300px;
@@ -56,7 +56,7 @@
 }
 
 .project-container-info {
-    margin: 0px 0px 0px 1rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
